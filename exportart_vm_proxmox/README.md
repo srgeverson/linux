@@ -1,2 +1,9 @@
-# Primeiro comando exporta a maquina virtual.
+
+## 🛠️ Instruções para exportar VM ProxMox
+
+```bash
+#Primeiro comando exporta a maquina virtual.
+
 # Segundo comando copia a maquina exportada para o servidor no qual será importado.
+
+```
