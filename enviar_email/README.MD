@@ -15,10 +15,10 @@ $ touch /etc/postfix/sasl_passwd
 $ postmap /etc/postfix/sasl_passwd
 
 ### Alterando o dono do aquivo
-$ chown root:root /etc/postfix/sasl_passwd*
+$ chown -c -R root:root /etc/postfix/sasl_passwd*
 
 ### Modificando as permissões
-$ chmod 0600 /etc/postfix/sasl_passwd*
+$ chmod -c -R 0600 /etc/postfix/sasl_passwd*
 
 ### Criando um backup do arquivo padrão
 $ cp /etc/postfix/main.cf /etc/postfix/main.backup
