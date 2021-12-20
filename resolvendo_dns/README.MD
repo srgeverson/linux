@@ -1,4 +1,4 @@
-## 🛠️ Passos executados
+## 🛠️ Passos executados para alterar DNS
 
 ```bash
 
