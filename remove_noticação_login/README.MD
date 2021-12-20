@@ -1,4 +1,4 @@
-## 🛠️ Remover avsido ao logar no pelo navegador no ProxMox
+## 🛠️ Remover avsiso ao logar no pelo navegador no ProxMox
 
 ```bash
 
