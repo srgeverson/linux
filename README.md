@@ -1,4 +1,4 @@
-## 🛠️ Procedimento realizados para configuração de ambientes linux
+## 🛠️ Procedimentos realizados para configuração de ambientes linux
 
 ```bash
 
