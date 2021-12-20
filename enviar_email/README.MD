@@ -2,6 +2,9 @@
 
 ```bash
 
+### Atualizando os pacotes
+$ apt-get update
+
 ### Instalando as ferramentas de email 
 $ apt-get install libsasl2-modules mailutils
 
