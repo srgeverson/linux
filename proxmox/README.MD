@@ -1,0 +1,6 @@
+## 🛠️ Configurações do proxmox
+
+```bash
+
+
+```
