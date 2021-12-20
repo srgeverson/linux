@@ -27,6 +27,6 @@ $ nano /etc/postfix/main.cf
 $ systemctl restart postfix
 
 ### Testando o envio de email
-$ echo "Test mail from postfix" | mail -s "Test Postfix" geversonjosedesouza@gmail.com
+$ echo "Test mail from postfix" | mail -s "Test Postfix" {EMAIL_DESTINATÁRIO}
 
 ```
