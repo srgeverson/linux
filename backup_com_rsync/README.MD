@@ -8,6 +8,12 @@ $ ssh-keygen -t rsa -b 4096 -C {INFORME_UM_EMAIL}
 # Copiando o hash gerado pelo ssh-keygen para o servidor remoto(Onde os backups serão armazenados)
 $ scp -P {PORTA_SSH} .ssh/id_rsa.pub {NOME_DO_USUÁRIO}@{IP_OU_DOMÍNIO}:{PASTA_HOME_DO_USUÁRIO}/.ssh/
 
+# Adicionando o usuário ao grupo wheel
+$ usermod -aG wheel {NOME_DO_USUÁRIO}
+
+# Remover o comentário se houver da linha seguinte
+%sudo ALL=(ALL) NOPASSWD: ALL
+
 # No servidor remoto caso não exista criar o arquivo authorized_keys
 $ touch {PASTA_HOME_DO_USUÁRIO}/.ssh/authorized_keys
 
