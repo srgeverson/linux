@@ -1,7 +1,7 @@
 #!/bin/bash
 
 INICIO=`date +%d/%m/%Y-%H:%M:%S`
-LOG=/home/balcao/suporte/log/`date +%Y-%m-%d-%H:%M:%S`_log_do_backup.txt
+LOG={CAMINHO_DO_ARQUIVO}`date +%Y-%m-%d-%H:%M:%S`_log_do_backup.txt
 
 echo " " >> $LOG
 echo " " >> $LOG
