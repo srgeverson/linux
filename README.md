@@ -2,6 +2,6 @@
 
 ```bash
 
-# Siga os passos de cada problema
+# Siga os passos contidos nas respectivas pastas para sua configuração
 
 ```
