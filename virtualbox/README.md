@@ -16,7 +16,10 @@ $ VBoxManage list vms
 $ VBoxManage list runningvms
 
 ## Ligar VM pelo terminal/cmd
-$ VBoxManage startvm "NOME_DA_VM" –type headless
+$ VBoxManage startvm "NOME_DA_VM"
+
+## Ligar em background VM pelo terminal/cmd
+$ VBoxManage startvm "NOME_DA_VM" --type headless
 
 ## Desligar VM pelo terminal/cmd
 $ VBoxManage controlvm "NOME_DA_VM" poweroff soft
