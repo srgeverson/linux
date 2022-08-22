@@ -21,4 +21,7 @@ $ VBoxManage startvm "NOME_DA_VM" –type headless
 ## Desligar VM pelo terminal/cmd
 $ VBoxManage controlvm "NOME_DA_VM" poweroff soft
 
+## Desligar VM pelo terminal/cmd evitando perda de dados
+$ VBoxManage controlvm "NOME_DA_VM" acpipowerbutton
+
 ```
