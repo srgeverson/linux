@@ -12,6 +12,9 @@ $ yum install -y "kernel-devel-$(uname -r)"
 ## Listar VMs pelo terminal/cmd
 $ VBoxManage list vms
 
+## Listar VMs que estão executando pelo terminal/cmd
+$ VBoxManage list runningvms
+
 ## Ligar VM pelo terminal/cmd
 $ VBoxManage startvm "NOME_DA_VM" –type headless
 
