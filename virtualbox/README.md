@@ -27,4 +27,16 @@ $ VBoxManage controlvm "NOME_DA_VM" poweroff soft
 ## Desligar VM pelo terminal/cmd evitando perda de dados
 $ VBoxManage controlvm "NOME_DA_VM" acpipowerbutton
 
+## Salve o arquivo e realiza as alterações necessárias em uma pasta
+$ cp nome_do_servico.service CAMINHO_ARQUIVO/nome_do_servico.service
+
+## Recarregar lista de serviços do SO
+$ systemctl daemon-reload
+
+## Iniciando o serviço criado
+$ systemctl start nome_do_servico.service
+
+## Habilitando serviço ao iniciar o SO
+$ systemctl enable nome_do_servico.service
+
 ```
