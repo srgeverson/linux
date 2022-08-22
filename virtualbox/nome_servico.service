@@ -1,0 +1,13 @@
+[Unit]
+Description=Descrição do serviço
+After=network.target
+
+[Service]
+Type=simple
+User=ankush
+ExecStart=VBoxManage startvm "NOME_DA_VM" --type headless
+ExecStop=VBoxManage controlvm "NOME_DA_VM" acpipowerbutton
+Restart=on-abort
+
+[Install]
+WantedBy=multi-user.target
