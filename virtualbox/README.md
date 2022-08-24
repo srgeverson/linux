@@ -39,6 +39,21 @@ $ touch /etc/vbox/vbox.cfg
 ## Editando arquivo criado
 $ nano /etc/vbox/vbox.cfg
 
+##
+$ chgrp vboxusers /etc/vbox
+
+##
+$ chmod 1775 /etc/vbox
+  
+##
+$ usermod -a -G vboxusers balcao 
+
+## 
+$ vboxmanage list vms
+
+## 
+$ VBoxManage modifyvm <uuid|vmname> --autostart-enabled on
+
 ## Salve o arquivo e realiza as alterações necessárias em uma pasta
 $ cp nome_do_servico.service CAMINHO_ARQUIVO/nome_do_servico.service
 
