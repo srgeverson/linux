@@ -27,6 +27,18 @@ $ VBoxManage controlvm "NOME_DA_VM" poweroff soft
 ## Desligar VM pelo terminal/cmd evitando perda de dados
 $ VBoxManage controlvm "NOME_DA_VM" acpipowerbutton
 
+## Criando arquivo de configuração
+$ touch /etc/default/virtualbox
+
+## Editando arquivo criado
+$ nano /etc/default/virtualbox
+
+## Criando arquivo de configuração do perfil do usuário
+$ touch /etc/vbox/vbox.cfg
+
+## Editando arquivo criado
+$ nano /etc/vbox/vbox.cfg
+
 ## Salve o arquivo e realiza as alterações necessárias em uma pasta
 $ cp nome_do_servico.service CAMINHO_ARQUIVO/nome_do_servico.service
 
