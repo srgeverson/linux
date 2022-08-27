@@ -39,7 +39,7 @@ $ mkdir -p /home/{PASTA_DO_USUARIO}/{PASTA_A_SER_CRIADA}
 $ cd /home/{PASTA_DO_USUARIO}/{PASTA_A_SER_CRIADA}
 
 # Instale suas dependências
-# npm install
+$ npm install
 
 # Caso sua aplicação possua Swagger execute o comando a seguir
 $ npm run swagger-autogen
