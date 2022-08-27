@@ -1,4 +1,4 @@
-## 🛠️ Instruções para realização de backup com RSync
+## 🛠️ Instruções para gerar publicação de aplicação Node JS
 
 ```bash
 
