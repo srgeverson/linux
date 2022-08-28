@@ -18,13 +18,14 @@ $ mysql -u root
 $ FLUSH PRIVILEGES;
 
 #
-$ SHOW VARIABLES LIKE 'validate_password%';
-
-#
-$ SET GLOBAL validate_password.length = 6;
-
-#
+$ SET GLOBAL validate_password.LENGTH = 4;
+$ SET GLOBAL validate_password.policy = 0;
+$ SET GLOBAL validate_password.mixed_case_count = 0;
 $ SET GLOBAL validate_password.number_count = 0;
+$ SET GLOBAL validate_password.special_char_count = 0;
+$ SET GLOBAL validate_password.check_user_name = 0;
+$ ALTER USER '{USUARIO_DO_BANCO_AQUI}'@'localhost' IDENTIFIED WITH mysql_native_password BY '{SENHA_DO_USUARIO_DO_BANCO_AQUI}';
+$ FLUSH PRIVILEGES;
 
 ### Alterando o my.ini
 $ bind-address="0.0.0.0"
