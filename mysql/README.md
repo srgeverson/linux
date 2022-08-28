@@ -2,6 +2,30 @@
 
 ```bash
 
+# Descobrir a localização do aquivo de configuração do mysql
+$ mysql --help
+
+# Editando o arquivo my.cnf e adicionando a seguinte instrução na seção  [mysqld]
+$ skip-grant-tables
+
+# Reiniciando o serviço
+$ systemctl restart mysqld
+
+# Logar no mysql
+$ mysql -u root 
+
+# 
+$ FLUSH PRIVILEGES;
+
+#
+$ SHOW VARIABLES LIKE 'validate_password%';
+
+#
+$ SET GLOBAL validate_password.length = 6;
+
+#
+$ SET GLOBAL validate_password.number_count = 0;
+
 ### Alterando o my.ini
 $ bind-address="0.0.0.0"
 
