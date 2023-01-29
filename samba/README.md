@@ -1,3 +1,7 @@
+## 🛠️ Instruções de configurações do samba
+
+```bash
+
 # Adicionar usuário no SO
 $ adduser {NOME_USUÁRIO}
 
@@ -15,3 +19,5 @@ $ systemctl restart smb.service
 
 # Reiniciando serviço de domínio do samba
 $ systemctl restart nmb.service
+
+```
