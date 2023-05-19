@@ -7,6 +7,20 @@
 [CentOS](https://www.centos.org) e [PostgreSQL](https://www.postgresql.org).
 
 ```bash
+# adicionando e instalando repositório mais recente
+$ sudo yum install -y https://download.postgresql.org/pub/repos/yum/reporpms/EL-7-x86_64/pgdg-redhat-repo-latest.noarch.rpm
+
+# Instalando PostgreSQL
+$ sudo yum install -y postgresql15-server
+
+#
+$ sudo /usr/pgsql-15/bin/postgresql-15-setup initdb
+
+#
+$ sudo systemctl start postgresql-15
+
+#
+$ sudo systemctl enable postgresql-15
 
 # Diretório de confuguração
 $ cd /opt/bacula/etc
