@@ -6,7 +6,7 @@
 É recomendado a utilização de:
 [CentOS](https://www.centos.org) e [PostgreSQL](https://www.postgresql.org).
 
-```
+```bash
 
 # Diretório de confuguração
 $ cd /opt/bacula/etc
