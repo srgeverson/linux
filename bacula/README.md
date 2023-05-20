@@ -17,14 +17,26 @@ $ sudo yum install -y postgresql15-server
 $ yum install https://dl.fedoraproject.org/pub/epel/epel-release-latest-7.noarch.rpm
 $ yum install libzstd-devel
 
-#
+# Iniciando o serviço do banco de dados
 $ sudo /usr/pgsql-15/bin/postgresql-15-setup initdb
 
-#
+# Executando o serviço do banco de dados
 $ sudo systemctl start postgresql-15
 
-#
+# Habilitando a execução autómatica com sistema operacional do serviço do banco de dados
 $ sudo systemctl enable postgresql-15
+
+# Realizando backup do arquivo default
+$ cp /var/lib/pgsql/data/pg_hba.conf /var/lib/pgsql/data/pg_hba.conf.bk
+
+# Adicionar no final do arquivo a seguinte instrução -> host all all 0.0.0.0/0 md5
+$ nano /var/lib/pgsql/data/pg_hba.conf
+
+# Libera porta no firewall
+$ firewall-cmd --permanent --zone=public --add-port=5432/tcp && firewall-cmd --reload
+
+# Reexecutando o serviço do banco de dados
+$ sudo systemctl restart postgresql-15
 
 # Diretório de confuguração
 $ cd /opt/bacula/etc
