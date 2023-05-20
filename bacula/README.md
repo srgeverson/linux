@@ -13,6 +13,10 @@ $ sudo yum install -y https://download.postgresql.org/pub/repos/yum/reporpms/EL-
 # Instalando PostgreSQL
 $ sudo yum install -y postgresql15-server
 
+# Se houver erro de incompatibilidade de bibliotecas
+$ yum install https://dl.fedoraproject.org/pub/epel/epel-release-latest-7.noarch.rpm
+$ yum install libzstd-devel
+
 #
 $ sudo /usr/pgsql-15/bin/postgresql-15-setup initdb
 
