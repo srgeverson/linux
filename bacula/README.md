@@ -38,6 +38,9 @@ $ firewall-cmd --permanent --zone=public --add-port=5432/tcp && firewall-cmd --r
 # Reexecutando o serviço do banco de dados
 $ sudo systemctl restart postgresql-15
 
+#
+$ sudo yum install -y bacula-director bacula-storage bacula-console bacula-client
+
 # Diretório de confuguração
 $ cd /opt/bacula/etc
 
